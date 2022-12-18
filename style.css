@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.rating-state {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 410px;
+    height: 415px;
+    background-color: hsl(213, 19%, 18%);
+    padding: 30px;
+    border-radius: 25px;
+    font-family: "Overpass";
+}
+
+.rating-state picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: hsla(216, 12%, 54%, 0.2);
+}
+
+.star-icon {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+}
+
+p {
+    color: hsl(217, 12%, 63%);
+}
+
+.rating-area {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+.rating {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: hsla(216, 12%, 54%, 0.2);
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+}
+
+.rating:hover {
+    cursor: pointer;
+    background-color: hsl(216, 12%, 54%);
+    color: hsl(0, 0%, 100%);
+    transition: 0.2s;
+}
+
+.selected {
+    cursor: pointer;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    transition: 0.2s;
+}
+
+.selected:hover {
+    cursor: pointer;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+button {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 25px;
+    border: 0;
+    padding: 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+button:hover {
+    cursor: pointer;
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 100%);
+    transition: 0.2s;
+}
+
+.thankyou-state {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 410px;
+    height: 415px;
+    background-color: hsl(213, 19%, 18%);
+    padding: 45px 30px;
+    border-radius: 25px;
+    font-family: "Overpass";
+}
+
+#rating-message {
+    padding: 5px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+    color:hsl(25, 97%, 53%);
+    background-color: hsla(216, 12%, 54%, 0.2);
+    margin: 0 0 20px 0;
+}
+
+h2 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.thankyou-state p {
+    font-size: 15px;
+    line-height: 150%;
+    font-weight: 400;
+    margin: 5px;
+}
+
+.thankyou-state > p {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+}
+
+.attribution {
+    font-family: "Overpass";
+    color: hsl(0, 0%, 100%);
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
