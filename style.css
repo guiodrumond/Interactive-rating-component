@@ -172,3 +172,10 @@ footer {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+@media screen and (max-width: 500px) {
+    .thankyou-state {
+        position: absolute;
+        top: 50px;
+    }
+}
